@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Alura LATAM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/logomg.png" type="image/x-icon">
+</head>
+<body>
+    <img class="logo" src="img/alura-logo.png" alt="">
+    <div class="contenedor-principal">
+        <textarea placeholder="Ingrese el texto aqui" class="textarea" id="mensaje" cols="30" rows="8"></textarea>
+        <div class="helper-text text-center">
+            <img class="minusLogo" src="img/alert-icon.png" alt="">
+            <span class="minus text-center">Solo letras minúsculas y sin acentos</span>
+        </div>
+        <div class="auto-layout">
+            <button class="boton-azul" onclick="encrypt()">Encriptar</button>
+            <button class="boton-gris"onclick="decrypt()">Desencriptar</button>
+        </div>
+    </div>
+    <div class="contenedor-resultado">
+        <div class="contenedor-resultado-texto">
+            <img id="muñeco" class="muñeco" src="/img/Muñeco.png" alt="">
+            <div>
+                <p class="textRes" id="texto">Ningún mensaje fue encontrado</p>
+                <span id="helper-res" class="helper-res">Ingresa el texto que desees encriptar o desencriptar.</span>
+            </div>
+        </div>
+        <button hidden="true" id="btn-copy" class="btn-copy">Copiar</button>
+    </div>
+    <footer>
+        Made with&nbsp;<span style="color: red;">&#10084</span>&nbsp;by&nbsp;<a target="_blank" href="https://github.com/LuisMigl97">"LAMG"</a>
+    </footer>
+    <script src="index.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+    </style>
+</body>
+</html>

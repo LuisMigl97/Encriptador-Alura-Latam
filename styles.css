@@ -1,0 +1,225 @@
+body{
+    background-color: #F3F5FC;
+}
+footer{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+}
+
+.textarea{
+    padding: 2rem;
+    border: none;
+    background-color: #F3F5FC;
+    resize: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    color: #0A3871;
+    position: relative;
+    left: 150px;
+}
+.textarea:focus{
+    outline: none !important;
+}
+.textarea::placeholder{
+    color: #0A3871;
+}
+
+.textRes{
+    font-family: 'Inter', sans-serif;
+    
+}
+.contenedor-principal{
+    padding: 100px 100px 0 100px;
+}
+.logo{
+    height: 48px;
+    width: 32px;
+    position: relative;
+    top:40px;
+    left: 84px;
+}
+.boton-azul{
+    width: 328px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+}
+.boton-azul:active{
+    box-shadow: 2px 2px 5px 2px #57616d;
+    background-color: #07274d;
+}
+.boton-gris{
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-size: 16px;
+    cursor: pointer;
+}
+.boton-gris:active{
+    box-shadow: 2px 2px 5px 2px #57616d;
+    background-color: #838689 ;
+}
+
+.auto-layout{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-left: 10rem;
+}
+.minus{
+    font-family: 'Inter';
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+}
+.minusLogo{
+    height: 16px;
+    width: 16px;
+}
+.text-center{
+    display: flex;
+    align-content: center;
+    gap: 8px;
+}
+.helper-text{
+    margin-left: 11.5rem;
+}
+.contenedor-resultado{
+    position: absolute;
+    width: 350px;
+    /* height: 40rem; */
+    height: 90%;
+    /* left: 1100px; */
+    left: 75%;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+}
+.muñeco{
+    width: 286px;
+    height: 254px;
+}
+.helper-res{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+.btn-copy{
+    position: inherit;
+    width: 200px;
+    height: 50px;
+    background: #FFFFFF;
+    bottom: 50px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    border-color: #0A3871;
+    color:#0A3871;
+    font-size: 16px;
+    font-family: 'Inter';
+    cursor: pointer;
+}
+.btn-copy:active{
+    box-shadow: 2px 2px 5px 2px #57616d;
+    background-color: #838689 ;
+
+}
+
+@media only screen and (max-width: 768px) {
+   .contenedor-principal{
+    width: 100px;
+    padding: 0;
+   }
+   .textarea{
+        padding: 1rem;
+        border: none;
+        background-color: #F3F5FC;
+        resize: none;
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        color: #0A3871;
+        position: relative;
+        left: 0;
+        width: 20rem;
+        margin-top: 3rem;
+        margin-left: 2rem;
+   }
+   .logo{
+        position: relative;
+        top:1rem;
+        left: 3rem;
+   }
+   .helper-text{
+        margin-left: 2.5rem;
+        width: 18rem;
+    }
+    .auto-layout{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+        margin-left: .5rem;
+    }
+    .contenedor-resultado{
+        position: relative;
+        width: 350px;
+        height: 40rem;
+        left: 1rem;
+        top: 40px;
+        background: #FFFFFF;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        color: #343A40;
+    }
+    footer{
+        font-family: 'Inter', sans-serif;
+        font-size: 12px;
+        position: relative;
+        left: 15%;
+        bottom: -100px;
+    }
+}
